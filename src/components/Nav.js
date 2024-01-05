@@ -7,7 +7,7 @@ import {Link} from 'react-scroll'
 
 const Nav = () => {
   return (
-  <nav className="fixed bottom-2 lg:bottom w-full overflow-hidden z-40">
+  <nav className="fixed bottom-2 lg:bottom w-full overflow-hidden z-50">
      {/* nav inner */}
     <div className="container mx-auto">
       <div className="w-full bg-black/20 h-[80px] backdrop-blur-2xl rounded-full max-w-[560px] mx-auto px-5 flex justify-between items-center text-2xl text-white/50">
@@ -18,7 +18,7 @@ const Nav = () => {
         smooth={true}
         spy={true}
         offset={-200}
-        ClassName= "cursor-poitner w-[60px] flex items-center justify-center">
+        className= "cursor-poitner w-[60px] flex items-center justify-center">
         <BiHomeAlt />
         </Link>
 
@@ -28,7 +28,7 @@ const Nav = () => {
         smooth={true}
         spy={true}
         offset={-200}
-        ClassName= "cursor-poitner w-[60px] flex items-center justify-center ">
+        className= "cursor-poitner w-[50px] flex items-center justify-center ">
         <BiUser />
         </Link>
 
@@ -37,8 +37,8 @@ const Nav = () => {
         activeClass='active'
         smooth={true}
         spy={true}
-        offset={-200}
-         ClassName= "cursor-poitner w-[60px] flex items-center justify-center ">
+        offset={-100}
+         className= "cursor-poitner w-[50px] flex items-center justify-center ">
         <BsClipboardData />
         </Link>
 
@@ -47,8 +47,8 @@ const Nav = () => {
         activeClass='active'
         smooth={true}
         spy={true}
-        offset={-200}
-        ClassName= "cursor-poitner w-[60px] flex items-center justify-center  ">
+        offset={-100}
+        className= "cursor-poitner w-[50px] flex items-center justify-center  ">
         <BsBriefcase />
         </Link>  
         <Link 
@@ -56,8 +56,8 @@ const Nav = () => {
         activeClass='active'
         smooth={true}
         spy={true}
-        offset={-200}
-        ClassName= "cursor-poitner w-[60px] flex items-center justify-center ">
+        offset={-100}
+        className= "cursor-poitner w-[50px] flex items-center justify-center ">
         <BsChatSquareText />
         </Link>
       </div>
