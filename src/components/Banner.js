@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '../assets/avatar.svg';
-import {FaGithub} from  "react-icons/fa";
+import {FaGithub , FaLinkedin} from  "react-icons/fa";
 import {TypeAnimation} from  'react-type-animation'
 import {motion} from 'framer-motion'
 import {fadeIn} from '../variants'
@@ -60,15 +60,15 @@ const Banner = () => {
          initial='hidden'
          whileInView={'show'}
          viewport={{once:false, amount: 0.7}}
-        className='flex text-[20px] gap-x-6 max-w-max mx-auto lg;mx-0'>
+        className='flex text-[30px] gap-x-6 max-w-max mx-auto lg;mx-0'>
           <a href="#">
             <FaGithub />
           </a>
           <a href="#">
-            <FaGithub />
+            <FaGithub/>
           </a>
           <a href="#">
-            <FaGithub />
+            <FaLinkedin />
           </a>
         </motion.div>
       </div>
