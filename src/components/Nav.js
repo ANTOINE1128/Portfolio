@@ -37,7 +37,7 @@ const Nav = () => {
         activeClass='active'
         smooth={true}
         spy={true}
-        offset={-100}
+        offset={-200}
          className= "cursor-poitner w-[50px] flex items-center justify-center ">
         <BsClipboardData />
         </Link>
@@ -56,7 +56,7 @@ const Nav = () => {
         activeClass='active'
         smooth={true}
         spy={true}
-        offset={-100}
+        offset={-200}
         className= "cursor-poitner w-[50px] flex items-center justify-center ">
         <BsChatSquareText />
         </Link>
