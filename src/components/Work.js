@@ -11,7 +11,7 @@ const Work = () => {
   <section className='section' id='work'>
     <div className='container mx-auto'>
       <div>
-        <div>
+        <div className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
           {/* {text} */}
           <div>
             <h2 className='h2 leading-tight text-accent'>
@@ -23,11 +23,17 @@ const Work = () => {
             <button className='btn btn-sm'>View all projects</button>
           </div>
           {/* {image} */}
-          <div>
+          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* {overlay} */}
            <div></div> 
            {/* {img} */}
-           <img src="" alt="" />
+           <img src={Img1} alt='' />
+           {/* {pretitle} */}
+           <div>UI/UX DESIGN</div>
+           {/* {TITILE} */}
+           <div>
+            <span>Project Title</span>
+            </div>
           </div>
         </div>
         <div>2</div>
