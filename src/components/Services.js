@@ -43,7 +43,8 @@ const Services = () => {
       variants={fadeIn('right' ,  0.3)}
       initial='hidden'
       whileInView={'show'}
-      viewport={{once: false, amount: 0.3}} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+      viewport={{once: false, amount: 0.3}}
+      className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
         {services.map((service, index) =>{
           const { name,description,link} = service;
           return (

@@ -17,7 +17,7 @@ const Nav = () => {
         activeClass='active'
         smooth={true}
         spy={true}
-        offset={-200}
+        offset={-100}
         className= "cursor-poitner w-[60px] flex items-center justify-center">
         <BiHomeAlt />
         </Link>
@@ -27,7 +27,7 @@ const Nav = () => {
         activeClass='active'
         smooth={true}
         spy={true}
-        offset={-200}
+        offset={-100}
         className= "cursor-poitner w-[50px] flex items-center justify-center ">
         <BiUser />
         </Link>
@@ -37,7 +37,7 @@ const Nav = () => {
         activeClass='active'
         smooth={true}
         spy={true}
-        offset={-200}
+        offset={-150}
          className= "cursor-poitner w-[50px] flex items-center justify-center ">
         <BsClipboardData />
         </Link>
@@ -56,7 +56,7 @@ const Nav = () => {
         activeClass='active'
         smooth={true}
         spy={true}
-        offset={-200}
+        offset={-100}
         className= "cursor-poitner w-[50px] flex items-center justify-center ">
         <BsChatSquareText />
         </Link>
