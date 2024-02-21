@@ -25,8 +25,8 @@ const Banner = () => {
          initial='hidden'
          whileInView={'show'}
          viewport={{once: false, amount: 0.7}}
-         className='mb-6 text-[46px] font-secondary font-semibold uppercase leadin-[1]'>
-          <span className=' text-white mr-4'>I am a </span>
+         className='mb-8 text-[40px] font-secondary font-semibold uppercase leadin-[1]'>
+          <span className=' text-white mr-4 mt-2'>I am a </span>
           <TypeAnimation sequence={[
             'Full Stack',2000,'Web Developer',2000
           ]}
@@ -42,7 +42,9 @@ const Banner = () => {
          whileInView={'show'}
          viewport={{once: false, amount: 0.7}}
         className='mb-8 max-w-lg mx-auto text-[28px]'>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam qui mollitia animi sed molestiae similique?
+         Hello Tech Enthusiasts!<br />
+
+Thanks for visiting my small realm of Software Development. Based in Lebanon, I bring over 2 years of hands-on experience in Full Stack Development.  I've embarked on a career shift fueled by an unconditional passion for coding. I look forward to joining an organization that shares the same passion. My goal in life is to create something that would have an ultimate impact. Wanna join me in this mission?
           </motion.p>
         <motion.div
          variants={fadeIn('up', 0.6)}

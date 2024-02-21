@@ -23,7 +23,7 @@ const Work = () => {
               MY Latest <br />
             Work.
             </h2>
-            <p className='max-w-sm mb-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex fuga sequi veritatis maxime dolores est, totam nemo neque, ducimus perferendis culpa consectetur quisquam dolor suscipit expedita autem 
+            <p className='max-w-sm mb-16'>You are invited to explore my digital Canvas. Have a look at my past endeavors, where every project tells a unique story of innovation and problem-solving. From intuitive user interfaces that beckon exploration to robust back-end architectures that power seamless functionality, each piece in my portfolio reflects a commitment to excellence. I look forward in creating even more complicated and impactful digital magic. In for the challenge? 
             </p>
             <button className='btn btn-sm'>View all projects</button>
           </div>
@@ -47,7 +47,7 @@ const Work = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{once: false, amount: 0.3}}
-        className='flex-1 flex flex-col gap-y-10'>
+        className='flex-1 flex flex-col c-gap'>
           {/* {image} */}
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* {overlay} */}

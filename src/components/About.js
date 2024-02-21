@@ -25,9 +25,13 @@ const About = () => {
       viewport={{once: false, amount: 0.3}}
       className='flex-1'
       >
-        <h2 className='h2 text-accent'>About Me.</h2>
-        <h3 className='h3 mb-4'>I'm a Full stack developer. Front-end javascript react.js redux redux-tool-kit, Back-end ruby , RubyOnRails , Mysql, Postgres , pgAdmin </h3>
-        <p className='mb-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae eius quas neque.
+        <h2 className='h2 text-accent'>My Tech Palette</h2>
+        <h3 className='h3 mb-4'>Front-End: JavaScript, React.js, Redux, Redux Toolkit
+Back-End: Ruby, Ruby on Rails, MySQL, Postgres, pgAdmin
+ </h3>
+        <p className='mb-6'>In the symphony of Full Stack development, I harmonize front-end finesse with back-end mastery, ensuring a seamless and enchanting user experience.
+
+Ready to infuse your projects with a blend of creativity, functionality, and a touch of coding magic? Let's create some digital wonders together.
         </p>
         <div>
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
