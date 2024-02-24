@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { fadeIn } from '../variants'; 
+import { fadeIn } from '../variants';
 
 const Contact = () => {
   return (
@@ -24,16 +24,32 @@ const Contact = () => {
           </motion.div>
           {/* {form} */}
           <motion.form 
-          variants={fadeIn('left' ,  0.3)}
-          initial='hidden'
-          whileInView={'show'}
-          viewport={{once: false, amount: 0.3}}
-          className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
-            <input  className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all ' type="text" placeholder='Your name'/>
-            <input  className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all ' type="text" placeholder='Your email'/>
-            <textarea className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12'
-            placeholder='Your message'
+            action="https://formspree.io/f/xdoqzadn"
+            method="POST"
+            variants={fadeIn('left' ,  0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once: false, amount: 0.3}}
+            className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'
+          >
+            <input  
+              className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
+              type="text" 
+              placeholder='Your name'
+              name="name" // Specify input field name
+            />
+            <input  
+              className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
+              type="email" 
+              placeholder='Your email'
+              name="_replyto" // Formspree requires email field to have name="_replyto"
+            />
+            <textarea 
+              className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12'
+              placeholder='Your message'
+              name="message" // Specify input field name
             ></textarea>
+            <input type="hidden" name="_subject" value="New submission!" />
             <button className='btn btn-lg'>Send message</button>
           </motion.form>
         </div>
