@@ -34,11 +34,15 @@ const Work = () => {
            {/* {img} */}
            <img className='group-hover:scale-125 transition-all duration-500' src={Img1} alt='' />
            {/* {pretitle} */}
-           <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><spam className='text-gradient'>UI/UX DESIGN</spam>
+           <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><spam className='text-gradient'>Full Stack Project</spam>
            </div>
            {/* {TITILE} */}
            <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-            <span className='text-3xl text-white'>Project Title</span>
+            <span className='text-3xl text-white'>BookADoctor</span>
+            <a href='https://book-doctor-appointment-frontend.netlify.app/signup'
+            className='btn btn-sm btn-accent mb-2 ml-12'>
+   Live Demo
+  </a> 
             </div>
           </div>
         </motion.div>
@@ -47,7 +51,7 @@ const Work = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{once: false, amount: 0.3}}
-        className='flex-1 flex flex-col c-gap'>
+        className='flex-1 flex flex-col gap-y-10'>
           {/* {image} */}
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* {overlay} */}
@@ -55,12 +59,16 @@ const Work = () => {
            {/* {img} */}
            <img className='group-hover:scale-125 transition-all duration-500' src={Img2} alt='' />
            {/* {pretitle} */}
-           <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><spam className='text-gradient'>UI/UX DESIGN</spam>
+           <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><spam className='text-gradient'>React/Redux project</spam>
            </div>
            {/* {TITILE} */}
-           <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-            <span className='text-3xl text-white'>Project Title</span>
+           <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50' >
+            <span className='text-3xl text-white'>Space Traveller</span> 
+                   <a href='https://space-travelers-hub-q37f.onrender.com/' className='btn btn-sm btn-accent mb-2 ml-12 '>
+   Live Demo
+  </a> 
             </div>
+
           </div>
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* {overlay} */}
@@ -68,11 +76,14 @@ const Work = () => {
            {/* {img} */}
            <img className='group-hover:scale-125 transition-all duration-500' src={Img3} alt='' />
            {/* {pretitle} */}
-           <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><spam className='text-gradient'>UI/UX DESIGN</spam>
+           <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><spam className='text-gradient'>Javascript project</spam>
            </div>
            {/* {TITILE} */}
            <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-            <span className='text-3xl text-white'>Project Title</span>
+            <span className='text-3xl text-white'>MovieMagnet</span>
+            <a href='https://65d8c496c4acfb2293856936--willowy-salmiakki-5f8ffc.netlify.app/' className='btn btn-sm btn-accent mb-2 ml-12'>
+   Live Demo
+  </a> 
             </div>
           </div>
         </motion.div>

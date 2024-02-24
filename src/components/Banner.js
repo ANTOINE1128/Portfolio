@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '../assets/avatar.svg';
-import {FaGithub , FaLinkedin} from  "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import {TypeAnimation} from  'react-type-animation'
 import {motion} from 'framer-motion'
 import {fadeIn} from '../variants'
@@ -63,13 +63,13 @@ Thanks for visiting my small realm of Software Development. Based in Lebanon, I 
          whileInView={'show'}
          viewport={{once: false, amount: 0.7}}
         className='flex text-[30px] gap-x-6 max-w-max mx-auto lg;mx-0'>
-          <a href="#">
+          <a href="https://github.com/ANTOINE1128">
             <FaGithub />
           </a>
-          <a href="#">
-            <FaGithub/>
+          <a href="mailto:makdessyantoine@gmail.com">
+            <FaEnvelope/>
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/antoine-makdessy/">
             <FaLinkedin />
           </a>
         </motion.div>

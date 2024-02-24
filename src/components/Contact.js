@@ -9,9 +9,9 @@ const Contact = () => {
         <div className='flex flex-col lg:flex-row'>
           {/* {text} */}
           <motion.div 
-            variants={fadeIn('right', 0.3)} // Corrected 'variants' spelling
+            variants={fadeIn('right', 0.3)} 
             initial='hidden'
-            whileInView='show' // Corrected the syntax
+            whileInView='show' 
             viewport={{once: false, amount: 0.3}}
             className='flex-1 flex justify-start items-center'
           >

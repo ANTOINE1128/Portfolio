@@ -1,27 +1,37 @@
-import React from 'react';
-import { BsArrowBarRight } from 'react-icons/bs';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 
 const services = [
   {
     name: 'UI/UX Design',
-    description: 'An Aesthetic Alchemy. I believe in creating not just interfaces but experiences that leave a lasting impression. From user flow to visual elements, I ensure that every interaction is intuitive and visually delightful.',
+    description: 'An Aesthetic Alchemy, I believe in creating not just interfaces but experiences that leave a lasting impression. From user flow to visual elements, I ensure that every interaction is intuitive and visually delightful.   ',
     link: 'learn more',
   },
   {
     name: 'Development',
-    description: "For me, development is not just about writing lines of code. it's the art of composing poetry in a programming language. I adhere to clean, efficient, and scalable code practices. Each function and module is a piece, contributing to the whole puzzle of a robust and well-crafted application.",
+    description: "For me, development is not just about writing lines of code. it's the art of composing poetry in a programming language. I adhere to clean, efficient, and scalable code practices. Each function and module is a piece, contributing to the whole puzzle of a robust and well-crafted web application.",
     link: 'learn more',
   },
   {
-    name: 'UI/UX Design',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptates culpa eaque exercitationem temporibus modi rem repellat officiis debitis cupiditate.',
+    name: 'Back-End',
+    description: 'I build robust and scalable back-end systems using Ruby on Rails framework and PostgreSQL database. With a focus on clean code, security and performance, I develop APIs and integrations that power the front-end.',
     link: 'learn more',
   },
 ];
 
 const Services = () => {
+  // State to manage expanded descriptions
+  const [expanded, setExpanded] = useState({});
+
+  // Function to toggle description expansion
+  const toggleExpand = (index) => {
+    setExpanded((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
+  };
+
   return (
     <section className='section mb-20' id='services'>
       <div className='container mx-auto'>
@@ -50,16 +60,24 @@ const Services = () => {
                 className='lg:w-1/2 flex flex-col gap-8'>
                 {services.map((service, index) => {
                   const { name, description, link } = service;
+                  const isExpanded = expanded[index];
+
                   return (
                     <div key={index} className='border-b border-white/20 pb-8'>
                       <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-2'>{name}</h4>
-                      <p className='font-secondary leading-tight mb-4'>{description}</p>
-                      <div className='flex items-center justify-between'>
-                        <a href='#' className='btn w-9 h-9 flex justify-center items-center'>
-                          <BsArrowBarRight />
-                        </a>
-                        <a href='#' className='text-gradient text-sm'>{link}</a>
-                      </div>
+                      <p className='font-secondary leading-tight mb-4'>
+                        {isExpanded ? description : `${description.split('. ')[0]}.`}
+                        {!isExpanded && (
+                          <button className='text-gradient text-sm flex-1' onClick={() => toggleExpand(index)}>
+                            {link}
+                          </button>
+                        )}
+                      </p>
+                      {isExpanded && (
+                        <button className='text-gradient text-sm flex-1' onClick={() => toggleExpand(index)}>
+                          Show Less 
+                        </button>
+                      )}
                     </div>
                   );
                 })}
